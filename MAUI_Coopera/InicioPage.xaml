@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI_Coopera.InicioPage"
+             Title=""
+             BackgroundColor="#23539A">
+    
+    <ScrollView>
+        <StackLayout Spacing="5" Margin="5" Padding="10">
+            <VerticalStackLayout>
+                <Border BackgroundColor="White" StrokeShape="20">
+                    <Entry
+                        Placeholder="Pesquisar por nome"
+                        TextColor="Black"
+                        />
+                </Border>
+                <HorizontalStackLayout Margin="0,10,0,0">
+                    <Border BackgroundColor="White" StrokeShape="20">
+                        <Picker
+                            Title="Filtrar por Serviço"
+                            WidthRequest="250"
+                            TextColor="Black"/>
+                    </Border>
+                    <Border BackgroundColor="White" StrokeShape="20">
+                        <Picker
+                            Title="Qntd. ⭐"
+                            WidthRequest="110"
+                            x:Name="pckEstrela"
+                            TextColor="Black"
+                            HorizontalTextAlignment="Center"/>
+                    </Border>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
